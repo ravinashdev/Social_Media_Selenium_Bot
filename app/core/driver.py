@@ -8,6 +8,8 @@ def get_driver():
     options = Options()
     options.add_argument("-profile")
     options.add_argument(settings.selenium.MOZILLA_PROFILE_PATH)
+    options.set_preference("dom.webdriver.enabled", False)
+    options.set_preference("useAutomationExtension", False)
     driver = webdriver.Firefox(
         service=Service(GeckoDriverManager().install()),
         options=options,

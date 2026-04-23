@@ -6,6 +6,6 @@ class SocialMediaService:
     def run(self):
         driver = get_driver()
         twitter = TwitterClient(driver)
-        instagram = InstagramClient(driver)
+        # instagram = InstagramClient(driver)
         twitter.login()
-        instagram.login()
+        # instagram.login()
