@@ -9,4 +9,3 @@ class SocialMediaService:
         instagram = InstagramClient(driver)
         twitter.login()
         instagram.login()
-        twitter.scrape_profile("example_user")

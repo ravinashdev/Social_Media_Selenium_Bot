@@ -6,9 +6,10 @@ from app.core.config import settings
 
 def get_driver():
     options = Options()
-    options.profile_path = settings.selenium.MOZILLA_PROFILE_PATH
+    options.add_argument("-profile")
+    options.add_argument(settings.selenium.MOZILLA_PROFILE_PATH)
     driver = webdriver.Firefox(
-        service=(GeckoDriverManager().install(),),
+        service=Service(GeckoDriverManager().install()),
         options=options,
     )
     return driver

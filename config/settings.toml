@@ -1,9 +1,9 @@
-[default.selenium]
+[default.SELENIUM]
 HEADLESS = false
 BROWSER = "firefox"
 
-[default.twitter]
+[default.TWITTER]
 BASE_URL = "https://twitter.com"
 
-[default.instagram]
+[default.INSTAGRAM]
 BASE_URL = "https://instagram.com"
