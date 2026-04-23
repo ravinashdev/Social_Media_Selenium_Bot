@@ -1,2 +1,9 @@
-[default]
-DEBUG = true
+[default.selenium]
+HEADLESS = false
+BROWSER = "firefox"
+
+[default.twitter]
+BASE_URL = "https://twitter.com"
+
+[default.instagram]
+BASE_URL = "https://instagram.com"

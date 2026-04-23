@@ -1,5 +1,8 @@
+from app.services.social_media_service import SocialMediaService
+
 def main():
-    print("🚀 App started")
+    service = SocialMediaService()
+    service.run()
 
 if __name__ == "__main__":
     main()
