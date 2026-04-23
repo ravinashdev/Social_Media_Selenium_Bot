@@ -1,0 +1,71 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.class
+*.so
+
+# ===== Packaging =====
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+MANIFEST
+
+# ===== Installer logs =====
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ===== Testing / Coverage =====
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Environments =====
+.env
+*.env.json
+.venv/
+venv/
+env/
+ENV/
+
+# ===== IDE =====
+.idea/
+.vscode/
+
+# ===== OS =====
+.DS_Store
+
+# ===== Logs =====
+*.log
+
+# ===== Dynaconf =====
+config/.secrets.toml
+
+# ===== Misc =====
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
