@@ -5,7 +5,11 @@ from app.modules.instagram.client import InstagramClient
 class SocialMediaService:
     def run(self):
         driver = get_driver()
-        twitter = TwitterClient(driver)
-        # instagram = InstagramClient(driver)
-        twitter.login()
+        # twitter = TwitterClient(driver)
+        instagram = InstagramClient(driver)
+        if not instagram.is_logged_in(driver):
+            instagram.login()
+        # twitter.login()
         # instagram.login()
+        instagram.post("hello")
+
